@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giới thiệu bản thân</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-content">
+
+            <h1>Khổng Đức Bình</h1>
+            <button id="menuBtn">☰</button>
+
+            <nav id="menu">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+            <button id="darkBtn">🌙</button>
+
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container about-content">
+
+            <div class="about-text">
+                <p class="hello">Xin chào!</p>
+
+                <h2>Mình là Khổng Đức Bình</h2>
+
+                <p>
+                    Mình là sinh viên đang học ngành Công nghệ thông tin và mình đang học tại Học viện Công nghệ Bưu chính Viễn thông.
+                    Mình yêu thích lập trình web và đang học HTML, CSS,
+                    JavaScript và các công nghệ liên quan.
+                </p>
+
+                <a href="#projects" class="btn">
+                    Xem dự án
+                </a>
+            </div>
+
+            <div class="about-image">
+                <img src="avt.png" alt="Ảnh đại diện">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+
+        <div class="container">
+
+            <h2>Kỹ năng</h2>
+
+            <p class="section-intro">
+                Một số kỹ năng mình đang học và sử dụng.
+            </p>
+
+            <input
+                type="text"
+                id="skillSearch"
+                placeholder="Nhập tên kỹ năng để tìm..."
+            >
+
+            <div id="skillList" class="skill-list">
+
+                <div class="skill">
+                    <span>HTML</span>
+                    <span>80%</span>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <span>75%</span>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <span>65%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Python</span>
+                    <span>60%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Java</span>
+                    <span>55%</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects" class="section projects reveal">
+
+        <div class="container">
+
+            <h2>Dự án</h2>
+
+            <p class="section-intro">
+                Một số dự án mình đã và đang thực hiện.
+            </p>
+
+            <div class="project-list">
+
+                <div class="project-card">
+                    <h3>01. Website cá nhân</h3>
+                    <p>
+                        Xây dựng trang web giới thiệu bản thân
+                        bằng HTML, CSS và JavaScript.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>02. Website quản lý kho</h3>
+                    <p>
+                        Xây dựng giao diện quản lý hàng hóa,
+                        nhân viên và khách hàng.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>03. Website quản lý chi tiêu</h3>
+                    <p>
+                        Website hỗ trợ thêm, sửa, xóa và
+                        theo dõi các khoản chi tiêu.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>04. Hệ thống luyện thi</h3>
+                    <p>
+                        Website hỗ trợ tìm kiếm đề thi
+                        và thực hiện bài kiểm tra trực tuyến.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="section reveal">
+
+        <div class="container">
+
+            <h2>Liên hệ</h2>
+
+            <p class="section-intro">
+                Nếu muốn liên hệ với mình, hãy điền thông tin bên dưới.
+            </p>
+
+            <form id="contactForm">
+
+                <label for="name">Họ và tên</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Nhập họ và tên"
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="text"
+                    id="email"
+                    placeholder="Nhập email"
+                >
+
+                <label for="message">Nội dung</label>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Nhập nội dung liên hệ"
+                ></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Gửi liên hệ
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> Khổng Đức Bình
+            <br> Kết nối với mình qua:
+            <a href="https://www.facebook.com/share/1HzHw4ULck/" target="_blank">Facebook</a> |
+            <a href="https://www.linkedin.com/in/binh-khong-duc-0b3aa0388" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/binhkdptit-pixel/B25DCCC034-BaiTH01.git" target="_blank">GitHub</a>
+        </p>
+
+        <button id="topBtn">
+            ↑ Về đầu trang
+        </button>
+
+    </footer>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
